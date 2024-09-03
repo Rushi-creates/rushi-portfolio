@@ -1,6 +1,7 @@
 "use client";
 import React from "react";
 import dynamic from "next/dynamic";
+import SkillsCarousel from "./SkillCarousel";
 
 const AnimatedNumbers = dynamic(
   () => {
@@ -25,7 +26,8 @@ const achievementsList = [
     value: "2",
   },
   {
-    metric: "Years",
+    prefix: "+",
+    metric: "clients",
     value: "5",
   },
 ];
@@ -58,10 +60,25 @@ const AchievementsSection = () => {
                 {achievement.postfix}
               </h2>
               <p className="text-[#ADB7BE] text-base">{achievement.metric}</p>
+
+              
             </div>
+
+            
           );
-        })}
+          
+        }
+        
+        )
+        
+
+        }
+
+
       </div>
+      {/* <SkillsCarousel/> */}
+
+
     </div>
   );
 };

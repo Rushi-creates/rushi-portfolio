@@ -8,10 +8,10 @@ const projectsData = [
   {
     id: 1,
     title: "Zarento Clothing Rental Ecommerce",
-    description: "Visit site here 👉 https://www.zarento.in",
+    description: "Our startup site",
     image: "/images/projects/zarento.png",
     tag: ["All", "Web"],
-    gitUrl: "/",
+    gitUrl: "https://www.zarento.in/",
     previewUrl: "https://www.zarento.in/",
   },
   {
@@ -20,8 +20,8 @@ const projectsData = [
     description:"Social media to share your fav songs/movies/series",
     image: "/images/projects/current-trend-thumbnail.png",
     tag: ["All", "Mobile"],
-    gitUrl: "/",
-    previewUrl: "/",
+    gitUrl: "https://drive.google.com/drive/folders/1beJTDh9LpEDU8LRVJFQriVKY1DS08cWc?usp=sharing",
+    previewUrl: "https://drive.google.com/drive/folders/1beJTDh9LpEDU8LRVJFQriVKY1DS08cWc?usp=sharing",
   },
   {
     id: 3,
@@ -29,8 +29,8 @@ const projectsData = [
     description: "Find right talent for your idea, made using Flutter",
     image: "/images/projects/bizcon-thumbnail.png",
     tag: ["All", "Mobile"],
-    gitUrl: "/",
-    previewUrl: "/",
+    gitUrl: "https://drive.google.com/drive/folders/1EFwOjO0xR26APj1C8lizlnBWPc6gYap5?usp=sharing",
+    previewUrl: "https://drive.google.com/drive/folders/1EFwOjO0xR26APj1C8lizlnBWPc6gYap5?usp=sharing",
   },
   {
     id: 4,
@@ -38,8 +38,8 @@ const projectsData = [
     description: "Made with Flutter",
     image: "/images/projects/noqueue1.jpeg",
     tag: ["All", "Mobile"],
-    gitUrl: "/",
-    previewUrl: "/",
+    gitUrl: "https://drive.google.com/file/d/1LoTCDWbYhhCljxVvYrUZnmffFXY1uuMW/view?usp=sharing",
+    previewUrl: "https://drive.google.com/file/d/1LoTCDWbYhhCljxVvYrUZnmffFXY1uuMW/view?usp=sharing",
   },
   {
     id: 5,
@@ -47,8 +47,8 @@ const projectsData = [
     description: "Python bot that generates n number of shorts using Ai",
     image: "/images/projects/yt-python-bot.png",
     tag: ["All", "Web"],
-    gitUrl: "/",
-    previewUrl: "/",
+    gitUrl: "https://drive.google.com/drive/folders/1fc48NGPZccdSmiIAwQvIsN7hyNMRn_2-?usp=sharing",
+    previewUrl: "https://drive.google.com/drive/folders/1fc48NGPZccdSmiIAwQvIsN7hyNMRn_2-?usp=sharing",
   },
   {
     id: 6,
@@ -56,8 +56,8 @@ const projectsData = [
     description: "Created with ♥ using flutter",
     image: "/images/projects/math-quiz1.png",
     tag: ["All", "Mobile"],
-    gitUrl: "/",
-    previewUrl: "/",
+    gitUrl: "https://drive.google.com/file/d/1hm436nU_xKIkGw4TwSwHXkNQjN6bKWo3/view?usp=sharing",
+    previewUrl: "https://drive.google.com/file/d/1hm436nU_xKIkGw4TwSwHXkNQjN6bKWo3/view?usp=sharing",
   },
 ];
 
@@ -90,15 +90,16 @@ const ProjectsSection = () => {
           name="All"
           isSelected={tag === "All"}
         />
-        <ProjectTag
-          onClick={handleTagChange}
-          name="Web"
-          isSelected={tag === "Web"}
-        />
+       
         <ProjectTag
           onClick={handleTagChange}
           name="Mobile"
           isSelected={tag === "Mobile"}
+        />
+         <ProjectTag
+          onClick={handleTagChange}
+          name="Web"
+          isSelected={tag === "Web"}
         />
       </div>
       <ul ref={ref} className="grid md:grid-cols-3 gap-8 md:gap-12">
@@ -108,7 +109,7 @@ const ProjectsSection = () => {
             variants={cardVariants}
             initial="initial"
             animate={isInView ? "animate" : "initial"}
-            transition={{ duration: 0.3, delay: index * 0.4 }}
+            transition={{ duration: 0.3, delay: index * 0.2 }}
           >
             <ProjectCard
               key={project.id}
