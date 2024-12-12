@@ -20,8 +20,8 @@ const projectsData = [
     description:"Social media to share your fav songs/movies/series",
     image: "/images/projects/current-trend-thumbnail.png",
     tag: ["All", "Mobile"],
-    gitUrl: "https://drive.google.com/drive/folders/1beJTDh9LpEDU8LRVJFQriVKY1DS08cWc?usp=sharing",
-    previewUrl: "https://drive.google.com/drive/folders/1beJTDh9LpEDU8LRVJFQriVKY1DS08cWc?usp=sharing",
+    gitUrl: "https://bit.ly/rushi-ct",
+    previewUrl: "https://bit.ly/rushi-ct",
   },
   {
     id: 3,
@@ -29,8 +29,8 @@ const projectsData = [
     description: "Find right talent for your idea, made using Flutter",
     image: "/images/projects/bizcon-thumbnail.png",
     tag: ["All", "Mobile"],
-    gitUrl: "https://drive.google.com/drive/folders/1EFwOjO0xR26APj1C8lizlnBWPc6gYap5?usp=sharing",
-    previewUrl: "https://drive.google.com/drive/folders/1EFwOjO0xR26APj1C8lizlnBWPc6gYap5?usp=sharing",
+    gitUrl: "https://bit.ly/rushi-bizcon",
+    previewUrl: "https://bit.ly/rushi-bizcon",
   },
   {
     id: 4,
