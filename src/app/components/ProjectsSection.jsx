@@ -11,8 +11,8 @@ const projectsData = [
     description: "Our startup site",
     image: "/images/projects/zarento.png",
     tag: ["All", "Web"],
-    gitUrl: "https://www.zarento.in/",
-    previewUrl: "https://www.zarento.in/",
+    gitUrl: "https://zarento-v2.vercel.app/",
+    previewUrl: "https://zarento-v2.vercel.app/",
   },
   {
     id: 2,
